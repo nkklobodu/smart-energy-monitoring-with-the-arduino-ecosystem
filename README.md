@@ -1,1 +1,1 @@
-# Smart energy monitoring device with Arduino
+# Smart Energy Monitoring with the Arduino Ecosystem
