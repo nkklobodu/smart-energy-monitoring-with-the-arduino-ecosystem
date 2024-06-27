@@ -36,7 +36,7 @@ Voltage is the force or pressure from an electrical circuit's power source that 
 
 In practice, the actual RMS voltage supplied can deviate slightly from standard values due to factors such as grid demand fluctuations and distance from supply. So while the nominal voltage is set at 120V or 230V, the actual voltage experienced by appliances may vary slightly, though it generally stays within a close range of these standards.
 
-<img src="assets/images/ac-power-characteristics.png" alt="AC Power Characteristics" width="720">
+<img src="assets/images/ac-power-characteristics.png" alt="AC Power Characteristics" width="640">
 
 
 #### 2. Current (I)
@@ -77,7 +77,7 @@ This switched-mode power supply, repurposed from a phone charger I had lying aro
 
 I opted to use this ready-made SMPS because it is compact, more efficient, and generates less heat compared to a custom-built linear power supply, which would also have been challenging due to the unavailability of components in my region.
 
-<img src="assets/images/dc-power-characteristics.png" alt="DC Power Characteristics" width="720">
+<img src="assets/images/dc-power-characteristics.png" alt="DC Power Characteristics" width="640">
 
 #### 4. Other Components and Tools
 In addition to the main components, the setup includes:
