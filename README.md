@@ -133,43 +133,55 @@ For the internal connections, I connected the AC power wires through the PZEM-00
 
 #### 5. Gluing
 I applied some glue to the internal and external components to keep them in place. I also glued the incoming ac power chord to prevent it from moving around and potentially disconnecting from the energy monitoring module.
-20240509_063446.jpg20240509_063543.jpg
+
+<img src="assets/images/gluing-1.jpg" alt="Gluing Process 1" width="">
+
+<br><br>
+<img src="assets/images/gluing-2.jpg" alt="Gluing Process 2" width="">
 
 
-
-6. External Connections
+#### 6. External Connections
 With the internal connections done, I went on to the external connections. I just needed to connect the live, neutral, and earth wires of the outgoing AC power wires to their respective slots on the socket. I then closed the electrical box with the socket, and that concluded the assembly.
-socket fitting.png
+
+<img src="assets/images/socket-fitting.png" alt="Socket Fitting" width="">
 
 
-7. Aesthetics
+#### 8. Aesthetics
 I went a step further to add some beauty to the project with some masking tape and Arduino stickers that came with the Arduino RP2040 Connect.
-20240509_072330.jpg
+
+<img src="assets/images/finished-project.jpg" alt="Finished Project" width="">
 
 
 
-4. Testing
+## 4. Testing
 I conducted 3 tests with the system, featuring different loads with different power requirements. They were:
-     • A 1500-watt kettle
-     • A 20-watt phone charger
-     • A variable wattage water dispenser.
+ - A 1500-watt kettle
+ - A 20-watt phone charger
+ - A variable wattage water dispenser
 
 The variable wattage of the dispenser arises because, at any time, the heating system, the cooling system, or both are either operating or not.
 
 Here are the videos in which the tests were conducted:
 
+#### Test 1: 1500W Kettle & 20W Phone Charger
+[![Test 1: 1500W Kettle](https://i3.ytimg.com/vi/ckypnygF4A8/hqdefault.jpg)](https://youtube.com/watch?v=ckypnygF4A8)
+
+https://youtube.com/watch?v=ckypnygF4A8
+<br><br>
+
+#### Test 2: Variable Wattage Water Dispenser
+[![Test 2: 20W Phone Charger](https://i3.ytimg.com/vi/FGi1NHuwpNw/hqdefault.jpg)](https://www.youtube.com/watch?v=FGi1NHuwpNw)
+
+https://www.youtube.com/watch?v=FGi1NHuwpNw
 
 
 
-
-
-
-5. Results and Analysis
+## 5. Results and Analysis
 From the test conducted in the video, we can conclude that the system works very well with appliances, from small inefficient chargers to power-hungry heating kettles.
 
 
 
-6. Conclusion and Remarks
+## 6. Conclusion and Remarks
 As already mention in the Abstract, this project contributes to the energy efficiency and management of household appliances. But its application goes beyond just the household and simply monitoring appliances.  With recent advancements in machine learning and artificial intelligence, the data collected from such smart meters can be used to predict energy consumption patterns, optimize energy usage, and even automate the operation of appliances.
 
 This project is just a stepping stone towards a future where every home is a smart home, and every appliance is a smart appliance with the Arduino ecosystem as the glue that binds them all together.
@@ -180,14 +192,14 @@ Lastly, it's a great inspiration to fellow makers and hobbyists.
 
 
 
-7. Resources and References
-Datasheets
-     – ESP32 datasheet
-     – PZEM-004T datasheet & manual
+## 7. Resources and References
+### Datasheets
+ * [ESP32 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+ * [PZEM-004T datasheet & manual](https://innovatorsguru.com/wp-content/uploads/2019/06/PZEM-004T-V3.0-Datasheet-User-Manual.pdf)
 
-Documentations
-     – PZEM004Tv30 library documentation
-     – Arduino IoT Cloud documentation
+### Documentations
+ * [PZEM004Tv30 library documentation](https://github.com/mandulaj/PZEM-004T-v30)
+ * [Arduino IoT Cloud documentation](https://docs.arduino.cc/arduino-cloud/)
 
-Project Assets
-     – Arduino Sketch/Code
+### Project Assets
+ * [Arduino Sketch/Code](https://app.arduino.cc/sketches/c1ae3b11-8a50-4f1b-909e-8092d69db51b?view-mode=preview)
