@@ -27,7 +27,6 @@ The intention behind this project goes beyond just creating awareness on energy,
 It's important that I set the stage by giving a brief overview of the quantity that this project will be dealing with—AC power. 
 Alternating Current (AC) Power is a type of electrical power delivered to homes, businesses, and industries. It alternates its direction of flow at a regular interval, typically depicted as a sine wave. This section explains critical AC quantities such as voltage, current, power, and frequency.
 
-<img src="assets/images/sine-wave.png" alt="Sine Wave Graph" width="">
 <img src="assets/images/sine-wave.png" alt="Sine Wave Graph" width="640">
 
 ### AC Power Quantities
@@ -37,7 +36,7 @@ Voltage is the force or pressure from an electrical circuit's power source that 
 
 In practice, the actual RMS voltage supplied can deviate slightly from standard values due to factors such as grid demand fluctuations and distance from supply. So while the nominal voltage is set at 120V or 230V, the actual voltage experienced by appliances may vary slightly, though it generally stays within a close range of these standards.
 
-<img src="assets/images/ac-power-characteristics.png" alt="AC Power Characteristics" width="">
+<img src="assets/images/ac-power-characteristics.png" alt="AC Power Characteristics" width="640">
 
 
 #### 2. Current (I)
@@ -58,7 +57,7 @@ Frequency, expressed in hertz (Hz), is the number of cycles the AC waveform unde
 
 ## 2. Components and Parts
 #### 1. ESP32 Development Board
-<img src="assets/images/esp32.jpg" alt="ESP32" width="">
+<img src="assets/images/esp32.jpg" alt="ESP32" width="640">
 
 The ESP32 serves as the central processing unit of the system, handling data acquisition from the PZEM-004T AC Energy Monitor and transmitting it to the Arduino IoT Cloud. It includes a Wi-Fi-capable chip, allowing it to connect to the internet directly. While the board accepts a 5V DC input, it primarily operates at 3.3V thanks to its integrated 5V to 3.3V voltage regulator.
 
@@ -67,7 +66,7 @@ The ESP32 serves as the central processing unit of the system, handling data acq
 Consequently, I switched to the ESP32 development board, which, while not originally intended, proved to be a suitable alternative.  Although this change slightly deviates from my project's original title which focuses on the Arduino ecosystem, I maintained the project title since the code, written in the Arduino Cloud editor, remains compatible with minor adjustments for the RP2040 Connect.
 
 #### 2. PZEM-004T AC Energy Monitor with 100A Current Transformer
-<img src="assets/images/pzem-004t.jpg" alt="PZEM-004T" width="">
+<img src="assets/images/pzem-004t.jpg" alt="PZEM-004T" width="640">
 
 The PZEM-004T AC Energy Monitor acts as the interface between the AC power quantities and the DC measurement circuit. It accurately measures electrical parameters such as voltage (up to 260V), current (up to 100A), power, energy, frequency, and power factor, using a non-invasive approach. The measured data is then relayed to the ESP32 board through a serial connection. This monitor is versatile, operating on either 5V or 3.3V DC.
 
