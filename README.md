@@ -1,6 +1,6 @@
 # Smart Energy Monitoring with the Arduino Ecosystem
 
-<img src="assets/images/cover-image.png" alt="Project image" width="">
+<img src="assets/images/cover-image.png" alt="Project image" width="720">
 
 In this age where even refrigerators think they’re smart, the **Smart Energy Monitoring with the Arduino Ecosystem** project takes a step towards making household appliances not just think, but actually be smart—about energy consumption and efficiency, at least.
 
@@ -28,6 +28,7 @@ It's important that I set the stage by giving a brief overview of the quantity t
 Alternating Current (AC) Power is a type of electrical power delivered to homes, businesses, and industries. It alternates its direction of flow at a regular interval, typically depicted as a sine wave. This section explains critical AC quantities such as voltage, current, power, and frequency.
 
 <img src="assets/images/sine-wave.png" alt="Sine Wave Graph" width="">
+<img src="assets/images/sine-wave.png" alt="Sine Wave Graph" width="640">
 
 ### AC Power Quantities
 
