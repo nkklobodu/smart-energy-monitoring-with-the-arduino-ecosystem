@@ -27,7 +27,7 @@ The intention behind this project goes beyond just creating awareness on energy,
 It's important that I set the stage by giving a brief overview of the quantity that this project will be dealing with—AC power. 
 Alternating Current (AC) Power is a type of electrical power delivered to homes, businesses, and industries. It alternates its direction of flow at a regular interval, typically depicted as a sine wave. This section explains critical AC quantities such as voltage, current, power, and frequency.
 
-<img src="assets/images/sine-wave.png" alt="Sine Wave Graph" width="640">
+<img src="assets/images/sine-wave.png" alt="Sine Wave Graph" width="480">
 
 ### AC Power Quantities
 
@@ -36,7 +36,7 @@ Voltage is the force or pressure from an electrical circuit's power source that 
 
 In practice, the actual RMS voltage supplied can deviate slightly from standard values due to factors such as grid demand fluctuations and distance from supply. So while the nominal voltage is set at 120V or 230V, the actual voltage experienced by appliances may vary slightly, though it generally stays within a close range of these standards.
 
-<img src="assets/images/ac-power-characteristics.png" alt="AC Power Characteristics" width="640">
+<img src="assets/images/ac-power-characteristics.png" alt="AC Power Characteristics" width="480">
 
 
 #### 2. Current (I)
@@ -57,7 +57,7 @@ Frequency, expressed in hertz (Hz), is the number of cycles the AC waveform unde
 
 ## 2. Components and Parts
 #### 1. ESP32 Development Board
-<img src="assets/images/esp32.jpg" alt="ESP32" width="640">
+<img src="assets/images/esp32.jpg" alt="ESP32" width="480">
 
 The ESP32 serves as the central processing unit of the system, handling data acquisition from the PZEM-004T AC Energy Monitor and transmitting it to the Arduino IoT Cloud. It includes a Wi-Fi-capable chip, allowing it to connect to the internet directly. While the board accepts a 5V DC input, it primarily operates at 3.3V thanks to its integrated 5V to 3.3V voltage regulator.
 
@@ -66,18 +66,18 @@ The ESP32 serves as the central processing unit of the system, handling data acq
 Consequently, I switched to the ESP32 development board, which, while not originally intended, proved to be a suitable alternative.  Although this change slightly deviates from my project's original title which focuses on the Arduino ecosystem, I maintained the project title since the code, written in the Arduino Cloud editor, remains compatible with minor adjustments for the RP2040 Connect.
 
 #### 2. PZEM-004T AC Energy Monitor with 100A Current Transformer
-<img src="assets/images/pzem-004t.jpg" alt="PZEM-004T" width="640">
+<img src="assets/images/pzem-004t.jpg" alt="PZEM-004T" width="480">
 
 The PZEM-004T AC Energy Monitor acts as the interface between the AC power quantities and the DC measurement circuit. It accurately measures electrical parameters such as voltage (up to 260V), current (up to 100A), power, energy, frequency, and power factor, using a non-invasive approach. The measured data is then relayed to the ESP32 board through a serial connection. This monitor is versatile, operating on either 5V or 3.3V DC.
 
 #### 3. 5V Switched Mode Power Supply (SMPS)
-<img src="assets/images/dc-adapter.jpg" alt="DC Adapter" width="">
+<img src="assets/images/dc-adapter.jpg" alt="DC Adapter" width="480">
 
 This switched-mode power supply, repurposed from a phone charger I had lying around, is the primary power source for the system. It efficiently converts 100-240V AC mains power to a stable 5V DC output, delivering up to 2.4A. The power adapter connects to the ESP32 board via USB, providing the necessary 5V DC. The PZEM-004T AC Energy Monitor then receives a regulated 3.3V DC from the ESP32.
 
 I opted to use this ready-made SMPS because it is compact, more efficient, and generates less heat compared to a custom-built linear power supply, which would also have been challenging due to the unavailability of components in my region.
 
-<img src="assets/images/dc-power-characteristics.png" alt="DC Power Characteristics" width="">
+<img src="assets/images/dc-power-characteristics.png" alt="DC Power Characteristics" width="480">
 
 #### 4. Other Components and Tools
 In addition to the main components, the setup includes:
@@ -102,12 +102,12 @@ With my components and tools ready on the workbench, I was ready to start assemb
 #### 1. AC Power Chord and Socket Connection
 I connected the live, neutral, and earth wires of the thick 3-wire AC power chord to the respective terminals of the AC power plug. They would supply AC power to both the energy monitoring system and the load to be monitored.
 
-<img src="assets/images/plug-&-chord-assembly.png" alt="Plug & Chord Assembly" width="">
+<img src="assets/images/plug-&-chord-assembly.png" alt="Plug & Chord Assembly" width="480">
 
 #### 2. Energy Monitoring Module Wires
 I went on to prepare the jumper wires for the connection between the ESP32 board and the energy monitoring module. I used 4 wires (Vcc, Rx, Tx, and Gnd). I made some modifications to the wires so that they could easily connect to the module and the module could fit in the enclosure box.
 
-<img src="assets/images/jumper-wires-customization.png" alt="Jumper Wires Customization" width="">
+<img src="assets/images/jumper-wires-customization.png" alt="Jumper Wires Customization" width="480">
 
 #### 3. Components Enclosure Box and Placement Plan
 Coming up with an enclosure for the system was a tough one. I didn’t have access to a 3D printer, so designing one was not an option. After a few iterations, I settled on recycling an old Apple AirPods packaging box I owned.
@@ -119,37 +119,37 @@ I got the box and drew the placement plan for the DC power supply adapter, the e
 #### 4. Internal connections
 For the internal connections, I connected the AC power wires through the PZEM-004T energy monitor to the DC power adapter in parallel with the AC outgoing wires. Here is a drawn diagram to help visualize the AC power connections.
 
-<img src="assets/images/wiring-diagram.jpg" alt="Wiring Diagram" width="">
+<img src="assets/images/wiring-diagram.jpg" alt="Wiring Diagram" width="480">
 
 <br><br>
-<img src="assets/images/wired0pzem-004t.jpg" alt="Wired PZEM-004T" width="">
+<img src="assets/images/wired0pzem-004t.jpg" alt="Wired PZEM-004T" width="480">
 
 <br><br>
-<img src="assets/images/fritzing-diagram.png" alt="Fritzing Diagram" width="">
+<img src="assets/images/fritzing-diagram.png" alt="Fritzing Diagram" width="480">
 
 <br><br>
-<img src="assets/images/wired-esp32.jpg" alt="Wired ESP32" width="">
+<img src="assets/images/wired-esp32.jpg" alt="Wired ESP32" width="480">
 
 
 #### 5. Gluing
 I applied some glue to the internal and external components to keep them in place. I also glued the incoming ac power chord to prevent it from moving around and potentially disconnecting from the energy monitoring module.
 
-<img src="assets/images/gluing-1.jpg" alt="Gluing Process 1" width="">
+<img src="assets/images/gluing-1.jpg" alt="Gluing Process 1" width="480">
 
 <br><br>
-<img src="assets/images/gluing-2.jpg" alt="Gluing Process 2" width="">
+<img src="assets/images/gluing-2.jpg" alt="Gluing Process 2" width="480">
 
 
 #### 6. External Connections
 With the internal connections done, I went on to the external connections. I just needed to connect the live, neutral, and earth wires of the outgoing AC power wires to their respective slots on the socket. I then closed the electrical box with the socket, and that concluded the assembly.
 
-<img src="assets/images/socket-fitting.png" alt="Socket Fitting" width="">
+<img src="assets/images/socket-fitting.png" alt="Socket Fitting" width="480">
 
 
 #### 8. Aesthetics
 I went a step further to add some beauty to the project with some masking tape and Arduino stickers that came with the Arduino RP2040 Connect.
 
-<img src="assets/images/finished-project.jpg" alt="Finished Project" width="">
+<img src="assets/images/finished-project.jpg" alt="Finished Project" width="480">
 
 
 
