@@ -120,14 +120,11 @@ I got the box and drew the placement plan for the DC power supply adapter, the e
 For the internal connections, I connected the AC power wires through the PZEM-004T energy monitor to the DC power adapter in parallel with the AC outgoing wires. Here is a drawn diagram to help visualize the AC power connections.
 
 <img src="assets/images/wiring-diagram.jpg" alt="Wiring Diagram" width="480">
-
-<br><br>
-<img src="assets/images/wired0pzem-004t.jpg" alt="Wired PZEM-004T" width="480">
-
-<br><br>
+<br>
+<img src="assets/images/wired-pzem-004t.jpg" alt="Wired PZEM-004T" width="480">
+<br>
 <img src="assets/images/fritzing-diagram.png" alt="Fritzing Diagram" width="480">
-
-<br><br>
+<br>
 <img src="assets/images/wired-esp32.jpg" alt="Wired ESP32" width="480">
 
 
@@ -135,8 +132,7 @@ For the internal connections, I connected the AC power wires through the PZEM-00
 I applied some glue to the internal and external components to keep them in place. I also glued the incoming ac power chord to prevent it from moving around and potentially disconnecting from the energy monitoring module.
 
 <img src="assets/images/gluing-1.jpg" alt="Gluing Process 1" width="480">
-
-<br><br>
+<br>
 <img src="assets/images/gluing-2.jpg" alt="Gluing Process 2" width="480">
 
 
